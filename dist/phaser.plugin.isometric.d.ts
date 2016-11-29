@@ -10,7 +10,7 @@ declare module Phaser {
   }
 
   interface GameObjectFactory {
-    isoSprite(x: number, y: number, z: number, key?: any, frame?: any, group?: Phaser.Group): Phaser.Sprite;
+    isoSprite(x: number, y: number, z: number, key?: any, frame?: any, group?: Phaser.Group): Phaser.Plugin.Isometric.IsoSprite;
   }
 }
 
@@ -38,7 +38,7 @@ declare module Phaser.Plugin {
 
         constructor(game: Phaser.Game, parent?: any);
 
-        addIsoSprite(x: number, y: number, z: number, key?: any, frame?: any, group?: Phaser.Group): Phaser.Sprite;
+        addIsoSprite(x: number, y: number, z: number, key?: any, frame?: any, group?: Phaser.Group): Phaser.Plugin.Isometric.IsoSprite;
 
     }
 
